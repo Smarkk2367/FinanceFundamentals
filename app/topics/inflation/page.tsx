@@ -73,7 +73,8 @@ export default function InflationPage() {
                 <p className="text-white/90 leading-relaxed max-w-2xl">
                     Inflacja jest naturalnym zjawiskiem w gospodarce rynkowej.
                     Kluczowe jest jednak jej tempo. Zbyt wysoka inflacja może destabilizować gospodarkę,
-                    natomiast umiarkowana i kontrolowana jest uznawana za element zdrowego rozwoju ekonomicznego.
+                    natomiast umiarkowana i kontrolowana jest uznawana za element zdrowego rozwoju ekonomicznego. <br />
+                    Pojęciem przeciwnym do inlfacji jest <b>deflacja</b>
                 </p>
             </div>
         </ArticleLayout>

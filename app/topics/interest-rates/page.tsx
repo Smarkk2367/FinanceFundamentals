@@ -4,42 +4,71 @@ export default function InterestRatesPage() {
     return (
         <ArticleLayout
             title="Stopy Procentowe"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus."
+            description="Czym są i kto je ustala?"
         >
             <h2>Czym są Stopy Procentowe?</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus.
+                Stopy procentowe określają koszt pożyczenia pieniędzy lub zysk z oszczędzania.
             </p>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus.
+                Wyrażane są w procentach w skali roku i pokazują,
+                ile trzeba zapłacić za korzystanie z kapitału lub ile można zarobić, gdy udostępnia się swoje środki innym.
             </p>
 
             <div className="bg-brand-navy-light text-white p-6 rounded-xl my-8">
-                <h3 className="text-brand-gold mt-0 border-b border-brand-gold/30 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus.</h3>
+                <h3 className="text-brand-gold mt-0 border-b border-brand-gold/30 pb-2">Przykładowo</h3>
                 <p className="mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus.
+                    jeśli stopa procentowa wynosi 5% rocznie, oznacza to, że pożyczając 1000 zł na rok, należy oddać około 1050 zł.
                 </p>
             </div>
 
-            <h2>Lorem Ipsum dolor seis</h2>
-
-            <h3>1. Lorem</h3>
-            <ul>
-                <li><strong>Lorem:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus.</li>
-                <li><strong>Ipsum:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus.</li>
-            </ul>
-            <p className="text-sm italic text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus.
+            <p>
+                W praktyce stopy procentowe wpływają na wiele elementów codziennego życia finansowego,
+                takich jak kredyty hipoteczne, oprocentowanie lokat czy koszt finansowania dla firm.
             </p>
 
-            <h3>2. Ipsum</h3>
-            <ul>
-                <li><strong>Lorem:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus.</li>
-                <li><strong>Ipsum:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus.</li>
-            </ul>
+            <h2>Kto ustala stopy procentowe?</h2>
+            <p>
+                Główną instytucją odpowiedzialną za ustalanie stóp procentowych w Polsce jest <strong>Narodowy Bank Polski (NBP)</strong>.
+            </p>
 
-            <p className="font-bold border-l-4 border-brand-gold pl-4 mt-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus.
+            <p>
+                Decyzje o zmianie stóp procentowych podejmowane są przez <strong>Radę Polityki Pieniężnej (RPP)</strong>,
+                która zbiera się regularnie, aby analizować sytuację gospodarczą i podejmować decyzje mające na celu utrzymanie stabilności cen.
+            </p>
+
+            <h2>
+                Dlaczego stopy procentowe się zmieniają?
+            </h2>
+            <p>
+                Banki centralne dostosowują stopy procentowe w odpowiedzi na sytuację gospodarczą.
+                Najczęściej chodzi o kontrolowanie inflacji i utrzymanie stabilnego wzrostu gospodarczego.
+            </p>
+            <p>
+                Podwyżka stóp procentowych zwykle ma na celu:
+                <ol>
+                    <li>ograniczenie inflacji</li>
+                    <li>zmniejszenie popytu</li>
+                    <li>zmniejszenie ilości pieniądza w obiegu</li>
+                    <li>zmniejszenie ilości kredytów</li>
+                    <li>zwiększenie oszczędności</li>
+                    <li>zmniejszenie konsumpcji</li>
+                </ol>
+            </p>
+            <p>
+                Obniżka stóp procentowych zwykle ma na celu:
+                <ol>
+                    <li>Pobudzenie gospodarki</li>
+                    <li>Zwiększenie inwestycji</li>
+                    <li>Zwiększenie konsumpcji</li>
+                    <li>Ułatwienie dostępu do kredtów</li>
+                </ol>
+            </p>
+            <h2>Jak stopy procentowe wpływają na Twoje finanse?</h2>
+            <p>
+                Stopy procentowe mają bezpośredni wpływ na finanse. Wpływają na wysokość rat kredytów,
+                oprocentowanie lokat, a także na ogólną sytuację gospodarczą. Wysokie stopy oznaczają  wyżesze raty kredytów czy
+                oprocentowanie oszczędności.
             </p>
         </ArticleLayout>
     );

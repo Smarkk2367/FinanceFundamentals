@@ -7,7 +7,7 @@ export default function TopicsPage() {
     const topics = [
         {
             title: "Inflacja i jej skutki",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            description: "Czym jest inflacja, jak wpływa na nasze oszczędności i siłę nabywczą pieniądza.",
             icon: <TrendingUp className="h-8 w-8 text-brand-gold mb-4" />,
             href: "/topics/inflation"
         },
@@ -25,7 +25,7 @@ export default function TopicsPage() {
         },
         {
             title: "Stopy Procentowe",
-            description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: "Czym są i kto je ustala?",
             icon: <Percent className="h-8 w-8 text-brand-gold mb-4" />,
             href: "/topics/interest-rates"
         },
