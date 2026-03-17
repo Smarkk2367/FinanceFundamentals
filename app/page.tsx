@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/Card";
-import { ArrowRight, TrendingUp, PiggyBank, Landmark, Percent } from "lucide-react";
+import { ArrowRight, TrendingUp, PiggyBank, Landmark, Percent, Target } from "lucide-react";
 
 export default function Home() {
   const featuredTopics = [
@@ -28,6 +28,12 @@ export default function Home() {
       description: "Jak decyzje banku centralnego wpływają na raty Twojego kredytu i zyski z lokat.",
       icon: <Percent className="h-10 w-10 text-brand-gold mb-4" />,
       href: "/topics/interest-rates"
+    },
+    {
+      title: "Podsumowanie i Quiz",
+      description: "Sprawdź swoją wiedzę zdobytą podczas warsztatów w krótkim quizie.",
+      icon: <Target className="h-10 w-10 text-brand-navy-light mb-4" />,
+      href: "/quiz"
     }
   ];
 
@@ -50,7 +56,7 @@ export default function Home() {
             </div>
             <div className="space-x-4 mt-8 flex flex-col sm:flex-row gap-4 sm:gap-0">
               <Button asChild variant="gold" size="lg" className="w-full sm:w-auto">
-                <Link href="/topics">
+                <Link href="/#modules">
                   Rozpocznij Naukę <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -65,17 +71,18 @@ export default function Home() {
       </section>
 
       {/*Topics*/}
-      <section className="w-full py-16 md:py-24 bg-background">
+      <section id="modules" className="w-full py-16 md:py-24 bg-background scroll-mt-16">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Moduły Warsztatowe</h2>
-              <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Kluczowe zagadnienia, które pomogą Ci zrozumieć otaczającą nas rzeczywistość gospodarczą.
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-brand-navy">Wszystkie Zagadnienia</h2>
+              <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
+                  Wybierz moduł, aby przejść do materiałów edukacyjnych z warsztatów. 
+                  Zalecamy przechodzenie przez zagadnienia po kolei.
               </p>
             </div>
           </div>
-          <div className="mx-auto grid max-w-5xl items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-2">
+          <div className="mx-auto grid max-w-6xl items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {featuredTopics.map((topic, index) => (
               <Card key={index} className="flex flex-col h-full hover:-translate-y-1 transition-transform duration-300 border-gray-200">
                 <CardHeader>
@@ -88,10 +95,10 @@ export default function Home() {
                   </CardDescription>
                 </CardContent>
                 <CardFooter>
-                  <Button asChild variant="ghost" className="w-full justify-between group">
+                  <Button asChild variant={index === featuredTopics.length - 1 ? "default" : "outline"} className="w-full justify-between group">
                     <Link href={topic.href}>
-                      Przejdź do materiałów
-                      <ArrowRight className="h-4 w-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                      {index === featuredTopics.length - 1 ? "Rozwiąż Quiz" : "Wybierz moduł"}
+                      <ArrowRight className="h-4 w-4 opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
                     </Link>
                   </Button>
                 </CardFooter>
