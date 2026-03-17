@@ -1,4 +1,5 @@
 import { ArticleLayout } from "@/components/ArticleLayout";
+import { InterestRateSimulator } from "@/components/InterestRateSimulator";
 
 export default function InterestRatesPage() {
     return (
@@ -68,6 +69,8 @@ export default function InterestRatesPage() {
                     </ul>
                 </div>
             </div>
+
+            <InterestRateSimulator />
 
             <div className="bg-brand-navy text-white p-8 rounded-xl my-10 border border-brand-navy-light shadow-lg not-prose">
                 <h3 className="text-2xl font-bold text-brand-gold mb-4 mt-0">Jak stopy procentowe wpływają na Twoje finanse?</h3>
