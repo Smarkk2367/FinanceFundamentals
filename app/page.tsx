@@ -64,12 +64,6 @@ export default function Home() {
       description: "Kup teraz, zapłać później – plusy i haczyki mechanizmu BNPL.",
       icon: <Clock className="h-10 w-10 text-brand-gold mb-4" />,
       href: "/topics/deferred-payment"
-    },
-    {
-      title: "Podsumowanie i Quiz",
-      description: "Sprawdź swoją wiedzę zdobytą podczas warsztatów w krótkim quizie.",
-      icon: <Target className="h-10 w-10 text-brand-navy-light mb-4" />,
-      href: "/quiz"
     }
   ];
 
@@ -126,9 +120,9 @@ export default function Home() {
                   </CardDescription>
                 </CardContent>
                 <CardFooter>
-                  <Button asChild variant={index === featuredTopics.length - 1 ? "default" : "outline"} className="w-full justify-between group">
+                  <Button asChild variant="outline" className="w-full justify-between group">
                     <Link href={topic.href}>
-                      {index === featuredTopics.length - 1 ? "Rozwiąż Quiz" : "Wybierz moduł"}
+                      Wybierz moduł
                       <ArrowRight className="h-4 w-4 opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
                     </Link>
                   </Button>
