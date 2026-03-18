@@ -11,7 +11,7 @@ export function ArticleLayout({ title, description, children }: ArticleLayoutPro
     return (
         <article className="container px-4 md:px-6 py-10 md:py-16 mx-auto max-w-4xl">
             <Link
-                href="/topics"
+                href="/#modules"
                 className="inline-flex items-center text-sm font-medium text-brand-gold hover:text-brand-gold-light transition-colors mb-8"
             >
                 <ArrowLeft className="mr-2 h-4 w-4" />
