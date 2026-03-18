@@ -95,15 +95,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/*Topics*/}
+
       <section id="modules" className="w-full py-16 md:py-24 bg-background scroll-mt-16">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-brand-navy">Wszystkie Zagadnienia</h2>
               <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-                  Wybierz moduł, aby przejść do materiałów edukacyjnych z warsztatów. 
-                  Zalecamy przechodzenie przez zagadnienia po kolei.
+                Wybierz moduł, aby przejść do materiałów edukacyjnych z warsztatów.
+                Zalecamy przechodzenie przez zagadnienia po kolei.
               </p>
             </div>
           </div>
