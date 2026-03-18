@@ -90,15 +90,10 @@ export default function Home() {
                 Projekt zrealizowany na potrzeby warsztatów dla uczniów.
               </p>
             </div>
-            <div className="space-x-4 mt-8 flex flex-col sm:flex-row gap-4 sm:gap-0">
+            <div className="space-x-4 mt-8 flex flex-col sm:flex-row gap-4 sm:gap-0 justify-center">
               <Button asChild variant="gold" size="lg" className="w-full sm:w-auto">
                 <Link href="/#modules">
                   Rozpocznij Naukę <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto text-white border-white hover:bg-white/10 hover:text-white">
-                <Link href="/calculator">
-                  Kalkulator Oszczędności
                 </Link>
               </Button>
             </div>

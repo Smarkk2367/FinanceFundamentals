@@ -19,12 +19,6 @@ export function Navbar() {
                         >
                             Zagadnienia
                         </Link>
-                        <Link
-                            href="/calculator"
-                            className="transition-colors hover:text-brand-gold text-white/90"
-                        >
-                            Kalkulator
-                        </Link>
                     </nav>
                 </div>
             </div>
