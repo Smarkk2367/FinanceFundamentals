@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/Card";
-import { ArrowRight, TrendingUp, PiggyBank, Landmark, Percent, Target } from "lucide-react";
+import { ArrowRight, TrendingUp, PiggyBank, Landmark, Percent, Target, Globe, Wallet, Scale, BarChart3, Tag, CreditCard, Building, Clock } from "lucide-react";
 
 export default function Home() {
   const featuredTopics = [
@@ -10,12 +10,6 @@ export default function Home() {
       description: "Dowiedz się, czym jest inflacja, jak wpływa na Twoje oszczędności i gospodarkę.",
       icon: <TrendingUp className="h-10 w-10 text-brand-gold mb-4" />,
       href: "/topics/inflation"
-    },
-    {
-      title: "Oszczędzanie i Inwestowanie",
-      description: "Poznaj różnice między oszczędzaniem a inwestowaniem. Jak budować poduszkę finansową.",
-      icon: <PiggyBank className="h-10 w-10 text-brand-gold mb-4" />,
-      href: "/topics/savings"
     },
     {
       title: "Popyt i Podaż",
@@ -28,6 +22,48 @@ export default function Home() {
       description: "Jak decyzje banku centralnego wpływają na raty Twojego kredytu i zyski z lokat.",
       icon: <Percent className="h-10 w-10 text-brand-gold mb-4" />,
       href: "/topics/interest-rates"
+    },
+    {
+      title: "Rezerwy dewizowe",
+      description: "Czym są rezerwy dewizowe i do czego służą państwu?",
+      icon: <Globe className="h-10 w-10 text-brand-gold mb-4" />,
+      href: "/topics/foreign-reserves"
+    },
+    {
+      title: "Budżet",
+      description: "Podstawowe zasady tworzenia budżetu domowego i państwowego.",
+      icon: <Wallet className="h-10 w-10 text-brand-gold mb-4" />,
+      href: "/topics/budget"
+    },
+    {
+      title: "Koszt stały i zmienny",
+      description: "Zrozum różnice w rodzajach kosztów w życiu i biznesie.",
+      icon: <Scale className="h-10 w-10 text-brand-gold mb-4" />,
+      href: "/topics/fixed-variable-costs"
+    },
+    {
+      title: "Procent prosty i składany",
+      description: "Jak darmowe pieniądze robią kolejne darmowe pieniądze.",
+      icon: <BarChart3 className="h-10 w-10 text-brand-gold mb-4" />,
+      href: "/topics/simple-compound-interest"
+    },
+    {
+      title: "Cena a wartość",
+      description: "Różnica pomiędzy tym, ile płacisz, a tym co zyskujesz.",
+      icon: <Tag className="h-10 w-10 text-brand-gold mb-4" />,
+      href: "/topics/price-vs-value"
+    },
+    {
+      title: "Lokata bankowa",
+      description: "Podstawowe narzędzie do oszczędzania pieniędzy w banku.",
+      icon: <Building className="h-10 w-10 text-brand-gold mb-4" />,
+      href: "/topics/bank-deposit"
+    },
+    {
+      title: "Płatność odroczona",
+      description: "Kup teraz, zapłać później – plusy i haczyki mechanizmu BNPL.",
+      icon: <Clock className="h-10 w-10 text-brand-gold mb-4" />,
+      href: "/topics/deferred-payment"
     },
     {
       title: "Podsumowanie i Quiz",

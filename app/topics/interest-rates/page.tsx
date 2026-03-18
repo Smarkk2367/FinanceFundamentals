@@ -70,6 +70,25 @@ export default function InterestRatesPage() {
                 </div>
             </div>
 
+            <hr className="my-8 border-gray-200" />
+
+            <h2>Czym jest RRSO? (Rzeczywista Roczna Stopa Oprocentowania)</h2>
+            <p>
+                Rzeczywista Roczna Stopa Oprocentowania (RRSO) to całkowity koszt kredytu ponoszony przez konsumenta, wyrażony jako wartość procentowa całkowitej kwoty kredytu w stosunku rocznym.
+                Nawet jeśli bank kusi niską <em>nominalną</em> stopą oprocentowania, to RRSO pokaże Ci faktyczny koszt po uwzględnieniu:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 mb-10">
+                <li>Oprocentowania nominalnego kredytu</li>
+                <li>Prowizji za udzielenie pożyczki</li>
+                <li>Dodatkowych opłat i narzuconych ubezpieczeń</li>
+            </ul>
+            
+            <div className="bg-brand-navy-light/5 p-6 rounded-lg my-8 border-l-4 border-brand-gold">
+                <p className="mb-0 text-lg font-medium text-brand-navy">
+                    Porównując dwa kredyty bankowe zawsze patrz na RRSO. Kredyt z niższym oprocentowaniem nominalnym może okazać się tak naprawdę dużo droższy ze względu na gigantyczną prowizję startową!
+                </p>
+            </div>
+
             <InterestRateSimulator />
 
             <div className="bg-brand-navy text-white p-8 rounded-xl my-10 border border-brand-navy-light shadow-lg not-prose">
