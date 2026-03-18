@@ -98,7 +98,7 @@ export function CostsSimulator() {
                         ) : (
                             <div className="max-w-xl">
                                 Aby wyjść w tym miesiącu całkowicie na 0 i spłacić wszystkie narzuty stałe, musisz znaleźć klientów na sztucznie zrobione ciasta w ilości równej:
-                                <div className="text-5xl font-black text-white my-4">{breakEvenPoint} sztuk!</div>
+                                <div className="text-3xl md:text-5xl font-black text-white my-4">{breakEvenPoint} sztuk!</div>
                                 <span className="text-brand-navy-light text-sm">(Każde ciastko powyżej tej liczby to w pełni Twój czysty zysk do kieszeni).</span>
                             </div>
                         )}
@@ -139,7 +139,7 @@ export function CostsSimulator() {
                     </div>
                     <div className="flex flex-col mt-2">
                         <span className="text-sm font-bold mb-1">{isDeficit ? 'Brakuje Ci do spłacenia firmy' : 'Gratulacje, Twój czysty zysk ląduje w kieszeni!'}</span>
-                        <span className={`text-6xl font-black tracking-tight ${isDeficit ? 'text-red-600' : 'text-green-600'}`}>
+                        <span className={`text-4xl md:text-6xl font-black tracking-tight ${isDeficit ? 'text-red-600' : 'text-green-600'}`}>
                             {profit > 0 ? '+' : ''}{profit} <span className="text-2xl font-bold">PLN</span>
                         </span>
                     </div>

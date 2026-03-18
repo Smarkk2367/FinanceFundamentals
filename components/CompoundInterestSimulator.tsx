@@ -51,7 +51,7 @@ export function CompoundInterestSimulator() {
                         <TrendingUp className="w-8 h-8 text-green-600 mb-2 z-10" />
                         <span className="text-green-800 font-bold uppercase text-xs tracking-widest mb-2 z-10">Koniec inwestycji giełdowej (Magia)</span>
                         <div className="flex items-baseline gap-1 z-10">
-                            <span className="text-5xl font-black text-green-700">{finalCompoundValue.toLocaleString('pl-PL')}</span>
+                            <span className="text-3xl md:text-5xl font-black text-green-700">{finalCompoundValue.toLocaleString('pl-PL')}</span>
                             <span className="text-xl font-bold text-green-600">PLN</span>
                         </div>
                         <p className="text-xs text-green-800/80 font-bold bg-green-200/50 px-3 py-1 mt-3 rounded-full z-10">
